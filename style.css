@@ -96,10 +96,6 @@ body {
 	transition: all 0.3s ease;
 }
 
-.header_ul a:hover {
-	color: #A259FF;
-}
-
 .button_user {
 	display: flex;
 	align-items: center;
@@ -108,10 +104,6 @@ body {
 	border-radius: 20px;
 	border: #A259FF 2px solid;
 	transition: all 0.3s ease;
-}
-
-.button_user:hover {
-	background-color: transparent;
 }
 
 .button_user img {
@@ -154,11 +146,6 @@ body {
 	font-weight: 600;
 	font-size: 16px;
 	margin-bottom: 30px;
-}
-
-.button_rocket:hover {
-	background-color: transparent;
-	color: #A259FF;
 }
 
 .button_rocket img {
@@ -326,12 +313,6 @@ body {
 	transition: all 0.8s ease;
 }
 
-.creators_content_flex div:hover img {
-	transform: rotate(360deg);
-	transition: all 0.8s ease;
-	cursor: pointer;
-}
-
 .creators_position {
 	position: absolute;
 	top: 20px;
@@ -415,12 +396,6 @@ body {
 	cursor: pointer;
 }
 
-.browse_categories_flex div:hover img {
-	transform: scale(1.2);
-	filter: blur(3px);
-	transition: all 0.3s ease;
-}
-
 .browse_categories_flex p {
 	position: absolute;
 	bottom: 0;
@@ -471,11 +446,6 @@ body {
 	font-weight: 600;
 	font-size: 16px;
 	margin-bottom: 30px;
-}
-
-.button_eye:hover {
-	background-color: transparent;
-	color: #A259FF;
 }
 
 .button_eye img {
@@ -621,10 +591,6 @@ body {
 	cursor: pointer;
 }
 
-.button_eye_magic:hover {
-	background-color: transparent;
-}
-
 .button_eye_magic img {
 	margin-right: 15px;
 }
@@ -702,11 +668,17 @@ body {
 	justify-content: space-around;
 }
 
+.one_content_flex p:nth-child(1) {
+	font-size: 22px;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
 .one_content_flex p:nth-child(2){
 	margin: 30px 0 20px 0;
 }
 
-.one_content_flex p {
+.one_content_flex p + p {
 	color: #CCCCCC;
 	font-weight: 400;
 	font-size: 16px;
@@ -726,9 +698,10 @@ body {
 	margin-left: 10px;
 }
 
-.content_flex_img img:hover {
-	transform: rotate(360deg);
-	filter: brightness(100%);
+.two_content_flex p:nth-child(1) {
+	font-size: 22px;
+	color: #FFFFFF;
+	font-weight: 700;
 }
 
 .two_content_flex p + p {
@@ -736,6 +709,12 @@ body {
 	color: #CCCCCC;
 	font-weight: 400;
 	font-size: 16px;
+}
+
+.three_content_flex p:nth-child(1) {
+	font-size: 22px;
+	color: #FFFFFF;
+	font-weight: 700;
 }
 
 .three_content_flex p + p {
@@ -774,6 +753,10 @@ body {
 	border-radius:20px ;
 }
 
+.footer_email_media {
+	display: none;
+}
+
 .unicode_footer {
 	text-align: center;
 	color: #CCCCCC;
@@ -782,6 +765,48 @@ body {
 	border-top: #858584 1px solid;
 	margin-top: 30px;
 	padding-top: 20px;
+}
+
+@media (hover: hover) {
+
+	.header_ul a:hover {
+		color: #A259FF;
+	}
+
+	.button_user:hover {
+		background-color: transparent;
+	}
+
+	.button_rocket:hover {
+		background-color: transparent;
+		color: #A259FF;
+	}
+
+	.creators_content_flex div:hover img {
+		transform: rotate(360deg);
+		transition: all 0.8s ease;
+		cursor: pointer;
+	}
+
+	.browse_categories_flex div:hover img {
+		transform: scale(1.2);
+		filter: blur(3px);
+		transition: all 0.3s ease;
+	}
+
+	.button_eye_magic:hover {
+		background-color: transparent;
+	}
+	
+	.button_eye:hover {
+		background-color: transparent;
+		color: #A259FF;
+	}
+
+	.content_flex_img img:hover {
+		transform: rotate(360deg);
+		filter: brightness(100%);
+	}
 }
 
 @media screen and (max-width: 830px) {
@@ -828,11 +853,6 @@ body {
 		font-weight: 600;
 		font-size: 16px;
 		margin-bottom: 30px;
-	}
-	
-	.button_rocket:hover {
-		background-color: transparent;
-		color: #A259FF;
 	}
 	
 	.button_rocket img {
@@ -1161,7 +1181,6 @@ body {
 
 	.footer_flex {
 		display: flex;
-		align-items: center;
 		justify-content: space-around;
 	}
 	
@@ -1219,6 +1238,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+
 	.container {
 		margin: auto;
 	}
@@ -1234,10 +1254,7 @@ body {
 	}
 	
 	.main_text1 h1 {
-		color: #FFFFFF;
-		font-weight: 600;
 		font-size: 28px;
-		line-height: 110%;
 	}
 	
 	.main_content_block1 {
@@ -1261,14 +1278,6 @@ body {
 
 	.creators_content_text {
 		text-align: center;
-	}
-	
-	.creators_content_text h2 {
-		font-size: 28px;
-	}
-	
-	.creators_content_text p {
-		font-size: 16px;
 	}
 
 	.creators_content_text a {
@@ -1310,18 +1319,6 @@ body {
 		display: block;
 	}
 	
-	.creators_title {
-		font-size: 22px;
-	}
-	
-	.creators_description {
-		font-size: 16px;
-	}
-	
-	.creators_content_flex span {
-		font-size: 16px;
-	}
-	
 	.browse_categories_content h2 {
 		font-size: 28px;
 		text-align: center;
@@ -1342,36 +1339,14 @@ body {
 	.browse_categories_flex + .browse_categories_flex {
 		margin-top: 0;
 	}
-	
-	.browse_categories_flex div {
-		width: 150px;
-		height: 190px;
-	}
 
 	.browse_categories_flex div + div {
 		margin-top: 25px;
-	}
-	
-	.browse_categories_flex img {
-		width: 150px;
-	}
-
-	.browse_categories_flex p {
-		width: 100%;
-		font-size: 16px;
 	}
 
 	.discover_more_text {
 		display: block;
 		text-align: center;
-	}
-	
-	.discover_more_text h2 {
-		font-size: 28px;
-	}
-	
-	.discover_more_text p {
-		font-size: 16px;
 	}
 
 	.discover_more_text a {
@@ -1392,13 +1367,7 @@ body {
 		display: none;
 	}
 	
-	.how_it_works_text h2 {
-		font-size: 28px;
-		text-align: center;
-	}
-	
-	.how_it_works_text p {
-		font-size: 16px;
+	.how_it_works_text {
 		text-align: center;
 	}
 	
@@ -1417,22 +1386,6 @@ body {
 		margin-top: 25px;
 	}
 
-	.how_it_works_flex div img {
-		width: 160px;
-	}
-	
-	.how_it_works_flex div h3 {
-		font-size: 16px;
-	}
-	
-	.how_it_works_flex div p {
-		font-size: 12px;
-	}
-	
-	.magic_mashrooms_content h2 {
-		font-size: 38px;
-	}
-
 	.weekly_digest_content {
 		display: flex;
 		flex-direction: column;
@@ -1447,19 +1400,6 @@ body {
 	.weekly_digest_content img {
 		width: 300px;
 		margin-bottom: 30px;
-	}
-	
-	.weekly_digest_text h2 {
-		font-size: 28px;
-	}
-	
-	.weekly_digest_text p {
-		font-size: 16px;
-		margin: 10px 0 40px 0;
-	}
-	
-	.input {
-		padding: 15px;
 	}
 
 	.button_email {
@@ -1500,7 +1440,7 @@ body {
 		text-align: center;
 	}
 
-	.one_content_flex p {
+	.one_content_flex p + p {
 		font-size: 12px;
 	}
 	
@@ -1509,7 +1449,7 @@ body {
 		margin-top: 30px;
 	}
 
-	.two_content_flex p {
+	.two_content_flex p + p {
 		font-size: 12px;
 	}
 
@@ -1518,7 +1458,7 @@ body {
 		margin-top: 30px;
 	}
 
-	.three_content_flex p {
+	.three_content_flex p + p {
 		font-size: 12px;
 	}
 
