@@ -237,20 +237,9 @@ body {
 }
 
 .dsgn_animals_flex img + img {
-	margin: 0 15px 0 15px;
+	margin: 0 0 0 30px;
 }
 
-.dsgn_animals_flex p {
-	font-weight: 700;
-	font-size: 22px;
-	color: #FFFFFF;
-	background-color: #A259FF;
-	border-radius: 20px;
-	width: 100%;
-	max-width: 100px;
-	text-align: center;
-	padding: 39px 0;
-}
 
 .sub_animals_flex p {
 	color: #FFFFFF;
@@ -809,10 +798,10 @@ body {
 	}
 }
 
-@media screen and (max-width: 830px) {
+@media (max-width: 992px) {
 	
 	.container {
-		margin: auto;
+		width: 768px;
 	}
 
 	.header_nav {
@@ -1238,10 +1227,10 @@ body {
 	}
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 768px) {
 
 	.container {
-		margin: auto;
+		width: 100%;
 	}
 
 	.header_nav {
