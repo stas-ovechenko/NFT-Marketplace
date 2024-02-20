@@ -11,18 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
     <!-- // -->
     <header class="header">
         <div class="container">
             <div class="header_content">
-                <nav class="header_nav">
+                <button id="btn" class="burg">
+                    <span></span>
+                </button>
+                <nav id="menu" class="header_nav">
                     <a class="header_logo" href="#"><img src="img/logo.svg" alt="logo">NFT Marketplace</a>
                     <ul class="header_ul">
                         <li><a href="#">Marketplace</a></li>
                         <li><a href="#">Rankings</a></li>
                         <li><a href="#">Connect a wallet</a></li>
-                        <li><a class="button_user" href="#"><img src="img/user_button_icon.svg" alt="user_button_icon">Sign Up</a></li>
+                        <li class="none_btn_media"><a class="button_user" href="#"><img src="img/user_button_icon.svg" alt="user_button_icon">Sign Up</a></li>
                     </ul>
                 </nav>
             </div>
@@ -426,5 +429,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
